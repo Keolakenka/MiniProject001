@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -23,6 +24,7 @@ import com.example.miniproject001.adapter.ImgRecycerViewAdater;
 import com.example.miniproject001.databinding.ActivityMainBinding;
 
 import com.example.miniproject001.databinding.CustomDialogBinding;
+import com.example.miniproject001.databinding.CustomDialogCloseAppBinding;
 import com.example.miniproject001.databinding.CustomLayoutBinding;
 import com.google.android.material.chip.Chip;
 import com.google.android.material.chip.ChipGroup;
@@ -129,6 +131,36 @@ public class MainActivity extends AppCompatActivity {
             chip.setText(text);
             chipGroup.addView(chip);
         }
+        binding.nextIcon.setOnClickListener(new View.OnClickListener() {
+            CustomDialogCloseAppBinding customDialogCloseAppBinding;
+            @Override
+            public void onClick(View view) {
+
+                MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(MainActivity.this);
+
+                custom = new Dialog(MainActivity.this);
+                customDialogCloseAppBinding = CustomDialogCloseAppBinding.inflate(getLayoutInflater());
+                custom.setContentView(customDialogCloseAppBinding.getRoot());
+
+                customDialogCloseAppBinding.cancel.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        custom.dismiss();
+
+                    }
+                });
+
+                AlertDialog dialog = builder.create();
+                custom.show();
+                customDialogCloseAppBinding.exit.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        finish();
+                    }
+                });
+            }
+
+        });
 
     }
 
