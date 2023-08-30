@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+
+
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:id="@+id/appbar"
+                android:fitsSystemWindows="true"
+
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:fitsSystemWindows="true"
+                    app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+                    app:contentScrim="?attr/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:id="@+id/coolaping_toolbar"
+                    app:title="Sign UP "
+
+                    app:expandedTitleTextColor="@color/white"
+                    android:background="@drawable/custom_button"
+                    android:layout_height="240dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center|end"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/country"></ImageView>
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:layout_width="match_parent"
+
+
+                        android:layout_height="?attr/actionBarSize"
+                        app:layout_collapseMode="pin"></androidx.appcompat.widget.Toolbar>
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+                <LinearLayout
+                    android:padding="30dp"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textSize="24sp"
+                        android:layout_marginTop="20dp"
+                        android:text="INFORMATION"
+                        android:textColor="@color/blue_sky"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/border_edit_text"
+                        android:id="@+id/name"
+                        android:hint="Enter your name">
+
+                    </EditText>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/radio"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </EditText>
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup"
+                            android:layout_marginTop="-7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="26dp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/male"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Male"
+                                android:textSize="16sp">
+
+
+                            </RadioButton>
+
+                            <RadioButton
+                                android:id="@+id/female"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Female"
+                                android:textSize="16sp">
+
+
+                            </RadioButton>
+
+                        </RadioGroup>
+                    </FrameLayout>
+
+                    <EditText
+                        android:id="@+id/Major"
+                        android:layout_width="match_parent"
+                        android:hint="Major"
+                        android:layout_height="wrap_content">
+
+                    </EditText>
+
+                    <Button
+                        android:id="@+id/btnSave"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:textSize="20sp"
+                        android:text="Save"
+                        android:layout_height="wrap_content"></Button>
+
+                    <TextView
+                        android:id="@+id/getEditText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                </LinearLayout>
+
+
+            </androidx.core.widget.NestedScrollView>
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

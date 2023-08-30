@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:padding="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+        android:layout_width="135dp"
+         app:cardCornerRadius="12dp"
+        android:layout_height="90dp">
+            <ImageView
+           android:id="@+id/img"
+           android:layout_width="135dp"
+           android:scaleType="centerCrop"
+           android:src="@drawable/sea"
+           android:layout_height="90dp">
+
+       </ImageView>
+
+</androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

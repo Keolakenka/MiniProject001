@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+
+        android:background="@color/blue_sky"
+        android:layout_height="match_parent"
+        tools:context=".Screen.Gallery">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:padding="20dp"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="GALLERY"
+                    android:textSize="18sp"
+                    android:id="@+id/textGallery"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="30sp"
+                    android:src="@drawable/notification"
+                    android:layout_alignParentRight="true"
+
+                    android:layout_height="30dp">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="24sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="For Art Exhibition"
+
+                    android:layout_below="@+id/textGallery"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/boder_for_activity_gallery">
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="24sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Albums"
+                android:layout_height="wrap_content"></TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:padding="8dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/gridLayoutManager">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+        </FrameLayout>
+
+
+    </LinearLayout>
+</layout>
