@@ -12,6 +12,9 @@
         android:padding="2dp"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="12dp"
+        app:cardElevation="8dp"
+
+        app:cardBackgroundColor="#000000"
         android:layout_height="match_parent">
 
         <androidx.cardview.widget.CardView

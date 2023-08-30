@@ -12,7 +12,7 @@ import android.widget.Toast;
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
 import com.example.miniproject001.R;
-import com.example.miniproject001.databinding.ActivityAddUserBinding;
+
 import com.example.miniproject001.databinding.ActivityAddUserInformationBinding;
 import com.example.miniproject001.model.ModelUser;
 

@@ -6,7 +6,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:text="POP UP"
-        android:background="@drawable/border_text"
+        android:background="@drawable/strok"
         android:layout_height="wrap_content">
 
     </TextView>

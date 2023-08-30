@@ -6,21 +6,26 @@ import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.example.miniproject001.Screen.AddUser_Information;
 import com.example.miniproject001.Screen.Gallery;
 import com.example.miniproject001.Screen.ContactNumber;
 import com.example.miniproject001.adapter.ImgRecycerViewAdater;
-import com.example.miniproject001.databinding.ActivityAddUserBinding;
+
 import com.example.miniproject001.databinding.ActivityMainBinding;
 
 import com.example.miniproject001.databinding.CustomDialogBinding;
 import com.example.miniproject001.databinding.CustomLayoutBinding;
+import com.google.android.material.chip.Chip;
+import com.google.android.material.chip.ChipGroup;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import java.util.ArrayList;
@@ -30,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     CustomLayoutBinding customLayoutBinding;
     CustomDialogBinding customDialogBinding;
     Dialog custom;
-    ActivityAddUserBinding addUserBinding;
+
 
 
 
@@ -110,10 +115,22 @@ public class MainActivity extends AppCompatActivity {
                Intent intent = new Intent(MainActivity.this, AddUser_Information.class);
                startActivity(intent);
            }
-       }); 
+       });
+        ChipGroup chipGroup =binding.animatedChip;
+
+        ArrayList<String> chipTextList = new ArrayList<>();
+        chipTextList.add("Pop Music");
+        chipTextList.add("Romaintic");
+        chipTextList.add("Horrorr");
+        chipTextList.add("Opera");
+
+        for (String text : chipTextList) {
+            Chip chip = new Chip(this);
+            chip.setText(text);
+            chipGroup.addView(chip);
+        }
 
     }
-
 
 
 

@@ -36,11 +36,11 @@
                 </TextView>
 
                 <ImageView
-                    android:layout_width="30sp"
+                    android:layout_width="40sp"
                     android:src="@drawable/notification"
                     android:layout_alignParentRight="true"
 
-                    android:layout_height="30dp">
+                    android:layout_height="40dp">
 
                 </ImageView>
 

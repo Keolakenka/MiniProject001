@@ -78,8 +78,9 @@
                     </TextView>
 
                     <EditText
+                        android:paddingLeft="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="35dp"
                         android:inputType="text"
                         android:layout_marginTop="15dp"
                         android:background="@drawable/border_edit_text"
@@ -95,8 +96,10 @@
 
                         <EditText
                             android:id="@+id/radio"
+
+                            android:background="@drawable/border_edit_text"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="35dp">
 
                         </EditText>
 
@@ -132,10 +135,12 @@
                     </FrameLayout>
 
                     <EditText
+                        android:paddingLeft="10dp"
                         android:id="@+id/Major"
                         android:layout_width="match_parent"
                         android:hint="Major"
-                        android:layout_height="wrap_content">
+                        android:background="@drawable/border_edit_text"
+                        android:layout_height="35dp">
 
                     </EditText>
 

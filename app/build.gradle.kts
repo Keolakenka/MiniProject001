@@ -60,4 +60,5 @@ dependencies {
     implementation ("com.squareup.picasso:picasso:2.5.2")
     implementation  ("com.google.android.material:material:1.4.0")
     implementation ("com.daimajia.androidanimations:library:2.4@aar");
+    implementation ("com.google.android.material:material:1.5.0");
 }
